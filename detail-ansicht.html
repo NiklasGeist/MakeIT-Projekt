@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Detail-Ansicht</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script defer src="src/JS/bootstrap.js"></script>
+
+    <script>
+        /** Handler that does this and that... */
+        function myfunction() {
+            alert("Änderungen Gespeichert")
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+
+
+            <a class="navbar-brand" href="#" id="picture"><img src="src/img/Logo_makeIT.svg"></a>
+            <div class="position-absolute top-0 end-0 icon_div">
+                <button class="btn btn-secondary dropdown nav-link" type="button" data-bs-toggle="dropdown"
+                    data-bs-display="static" aria-expanded="false">
+                    <img class="profile_active" src="src/img/person-circle.svg" alt="A Profile Logo">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" id="dri" href="#">Profil</a></li>
+                    <li><a class="dropdown-item" id="dri" href="#">Einstellungen</a></li>
+                    <li><a class="dropdown-item" id="dri" href="index.html">Abmelden</a></li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="inventar.html">Inventar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Impressum</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Details -->
+    <div class="container-fluid mt-5">
+        <div class="svg-container d-flex" style="position: absolute;">
+            <a href="#" onclick="window.history.back(); return false;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height=""
+                    class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                </svg>
+            </a>
+        </div>
+        <h1 class="pb-5">Detail-Ansicht</h1>
+    </div>
+    <section class="container py-5">
+        <form>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                <div class="col">
+                    <label for="name" class="form-label">Name:</label>
+                    <input class="form-control" placeholder="Raspberry pi" id="name">
+                </div>
+                <div class="col">
+                    <label for="anschaffungsdatum" class="form-label">Anschaffungsdatum:</label>
+                    <input type="date" class="form-control" id="anschaffungsdatum">
+                </div>
+                <div class="col">
+                    <label for="marke" class="form-label">Marke:</label>
+                    <input class="form-control" placeholder="Raspberry pi Foundation" id="marke">
+                </div>
+                <div class="col">
+                    <label for="kategorie" class="form-label">Kategorie:</label>
+                    <input class="form-control" placeholder="Microcomputer" id="kategorie">
+                </div>
+                <div class="col">
+                    <label for="Modell" class="form-label">Modell:</label>
+                    <input class="form-control" placeholder="Raspberry pi 4" id="modell">
+                </div>
+                <div class="col">
+                    <label for="Status" class="form-label">Status:</label>
+                    <input class="form-control" placeholder="Verfügbar" id="Status">
+                </div>
+                <div class="col ">
+                    <label for="exampleInputEmail1" class="form-label">Inventarnummer:</label>
+                    <input class="form-control" placeholder="S123456" id="Inventarnummer">
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1" class="form-label">Kosten (in Euro):</label>
+                    <input type="number" min="1" step="any" class="form-control" id="Kosten">
+                </div>
+
+            </div>
+            <div class="row row-cols-2 mt-4">
+                <div class="col d-flex justify-content-end">                
+                    <button type="button" class="btn btn-outline-success">Foto hochladen</button>
+                </div>
+                <div class="col">
+                    <button type="button" onclick="myfunction()" class="btn btn-outline-success">Label Drucken</button>
+                </div>
+            </div>
+
+            <!-- Details-End -->
+
+
+            <!-- Buttons -->
+            
+            <div class="mt-5 d-flex justify-content-end">
+                <button type="button" class="btn">Item entfernen</button>
+                <button type="button" onclick="myfunction()" class="btn btn-primary">Änderungen speichern</button>
+            </div>
+            <!-- Buttons end -->
+
+        </form>
+    </section>
+
+</body>
+
+</html>

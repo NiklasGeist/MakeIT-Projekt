@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website mit Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script defer src="src/JS/bootstrap.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="picture"><img src="src/img/Logo_makeIT.svg"></a>
+            <div class="position-absolute top-0 end-0 icon_div">
+                <button class="btn btn-secondary dropdown nav-link" type="button" data-bs-toggle="dropdown"
+                    data-bs-display="static" aria-expanded="false">
+                    <img class="profile_active" src="src/img/person-circle.svg" alt="A Profile Logo">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" id="dri" href="#">Profil</a></li>
+                    <li><a class="dropdown-item" id="dri" href="#">Einstellungen</a></li>
+                    <li><a class="dropdown-item" id="dri" href="index.html">Abmelden</a></li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="inventar.html">Inventar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Impressum</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid py-5">
+        <div class="container-fluid">
+            <div class="svg-container" style="position: absolute;">
+                <a href="#" onclick="window.history.back(); return false;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="" class="bi bi-arrow-left-circle"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                    </svg>
+                </a>
+            </div>
+            <h1 class="pb-5">Website mit Bootstrap</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <div class="text-start">
+                        <img src="Bildschirmfoto vom 2024-04-08 15-29-41.jpg" class="img-fluid" alt="Responsive image">
+                        <br>
+                        <br>
+                        <h2>
+                            <strong>Meine Aufgabe mit Bootstrap</strong>
+                        </h2>
+                        <br>
+                        <p class="lh-lg" style="font-weight: 200;">
+                            Meine Aufgabe bestand darin, mit Bootstrap eine Übersichtsseite über die Challenges des
+                            MakeIT zu erstellen.
+                            Von dort sollte man dann zu den Detailseiten der Projekte gelangen.
+                            Dabei war es wichtig, nicht nur eine funktionale Seite zu entwickeln, sondern auch eine
+                            ansprechende Benutzererfahrung zu bieten.
+                            Der Inhalt der Seite sollte auf verschiedenen Geräten mit unterschiedlichen Bildschirmgrößen
+                            richtig angezeigt werden.
+                        </p>
+                        <br>
+                        <h2>
+                            <strong>Herausforderungen und Ziele</strong>
+                        </h2>
+                        <br>
+                        <p class="lh-lg" style="font-weight: 200;">
+                            Die Herausforderung bestand darin, das Layout der anderen Seiten beizubehalten.
+                            Auch der Beispieltext sollte sinnvoll sein und zusammen mit der Gestaltung ein möglichst
+                            stimmiges Ganzes ergeben.
+                            Ich sah es als Chance, direkt an einem prakischen Beispiel in die Arbeit mit Bootstrap
+                            einzusteigen und mir einen ersten Einblick in die vielen nützlichen Funktionen von Bootstrap
+                            zu verschaffen.
+                        </p>
+                        <br>
+                        <h2>
+                            <strong>Die Arbeit mit Bootstrap</strong>
+                        </h2>
+                        <br>
+                        <p class="lh-lg" style="font-weight: 200;">
+                            Die Vorteile der Arbeit mit Bootstrap zeigten sich schnell.
+                            Bootstrap ist sehr gut dokumentiert und bietet viele nützliche Beispiele, welche sofort
+                            verwendet werden können.
+                            Um die von mir erstellten Seiten an die anderen Seiten optisch anzupassen wurde der
+                            Grundaufbau wiederverwendet.
+                            So konnte ich viele Elemente wiederverwenden.
+                            Danach zeigte sich jedoch, dass ich noch viel über das Gridsystem von Bootstrap lernen
+                            musste, um Texte und Bilder visuell ansprechend anzuordnen, z. B diese nach Bedarf
+                            linksbündig aber dennoch in der Mitte der Seite zu halten. Es erschien mir sinnvoll dies in
+                            einer separaten html-datei auszuprobieren. Hier konnte viel über die Möglichkeiten der
+                            Klassen row und column und die Anordnung von Elementen lernen.
+                            Im Anschluss fügte ich Zwischenüberschriften ein um den Text als Ganzes ansprechender zu
+                            gestalten.
+                        </p>
+                        <br>
+                        <h2>
+                            <strong>Erfahrungen und Ausblick</strong>
+                        </h2>
+                        <br>
+                        <p class="lh-lg" style="font-weight: 200;">
+                            Es stellte sich als ein sehr spannendes Thema heraus.
+                            Ich konnte viel über den Aufbau von Webseiten lernen und bereits einiges über das Gridsystem
+                            lernen.
+                            Es ermöglichte mir, den Inhalt der Seite besser auszurichten und weitere Inhalte daran zu
+                            orientieren.
+                            Manuelle Anpassung einzelnder Elemente wurden dadurch überflüssig.
+                            Ich hatte viel Spaß bei dieser Arbeit und möchte noch viel mehr lernen.
+                        </p>
+                        <br>
+                        <hr>
+                        <span>
+                            Von <a href="https://makeit-gelnhausen.de" title="Beiträge von Niklas Geist"
+                                rel="author">Niklas Geist</a> | April 9, 2024
+                        </span>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

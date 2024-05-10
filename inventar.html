@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>makeIT Inventar</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script defer src="src/JS/bootstrap.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" id="picture"><img src="src/img/Logo_makeIT.svg"></a>
+      <div class="position-absolute top-0 end-0 icon_div">
+        <button class="btn btn-secondary dropdown nav-link" type="button" data-bs-toggle="dropdown"
+          data-bs-display="static" aria-expanded="false">
+          <img class="profile_active" src="src/img/person-circle.svg" alt="A Profile Logo">
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" id="dri" href="#">Profil</a></li>
+          <li><a class="dropdown-item" id="dri" href="#">Einstellungen</a></li>
+          <li><a class="dropdown-item" id="dri" href="index.html">Abmelden</a></li>
+        </ul>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="inventar.html">Inventar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">Impressum</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container-fluid py-5">
+    <div class="container-fluid">
+      <div class="svg-container" style="position: absolute;">
+        <a href="#" onclick="window.history.back(); return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height=""
+            class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+          </svg>
+        </a>
+      </div>
+      <h1 class="pb-5">Inventar</h1>
+    </div>
+      <div class="container-fluid">
+        <div class="mb-3 d-flex justify-content-end">
+          <a href="add-item.html" class="btn btn-outline-success">
+            Item hinzufügen <span id="oplus"><img src="src/img/plus-lg.svg"></span>
+          </a>
+        </div>
+        <form class="mb-3">
+          <div class="d-flex justify-content-end">
+            <!-- Die Em Angabe ist nicht skalierbar -->
+            <div class="input-group" style="max-width: 107em;">
+              <span class="input-group-text">
+                <img src="src/img/search.svg" alt="Search Icon">
+              </span>
+              <input type="search" class="form-control" placeholder="Suchbegriff..." aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Suche</button>
+            </div>
+          </div>
+        </form>
+        <div class="d-flex justify-content-end">
+          <div class="dropdown">
+            <a class="btn dropdown-outline-success dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Anzahl pro Seite
+            </a>
+            <ul class="dropdown-menu">
+              <li><a id="dri" class="dropdown-item" href="#">10</a></li>
+              <li><a id="dri" class="dropdown-item" href="#">25</a></li>
+              <li><a id="dri" class="dropdown-item" href="#">50</a></li>
+              <li><a id="dri" class="dropdown-item" href="#">100</a></li>
+            </ul>
+          </div>
+            <table class="table table-responsive table-hover">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Seriennummer</th>
+                  <th>Status</th>
+                  <th>Lagerort</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="detail-ansicht.html" class="link-container">
+                      <div>Eintrag 1</div>
+                    </a>
+                  </td>
+                  <td>S123456</td>
+                  <td>Verfügbar</td>
+                  <td>Lager 1</td>
+                </tr>
+                <tr>
+                  <td>Eintrag 1</td>
+                  <td>S123456</td>
+                  <td>Verfügbar</td>
+                  <td>Lager 1</td>
+                </tr>
+                <tr>
+                  <td>Eintrag 2</td>
+                  <td>S789012</td>
+                  <td>Ausgeliehen</td>
+                  <td>Lager 2</td>
+                </tr>
+                <tr>
+                  <td>Eintrag 3</td>
+                  <td>S345678</td>
+                  <td>Reparatur</td>
+                  <td>Lager 3</td>
+                </tr>
+                <tr>
+                  <td>Eintrag 4</td>
+                  <td>S901234</td>
+                  <td>Verfügbar</td>
+                  <td>Lager 1</td>
+                </tr>
+                <tr>
+                  <td>Eintrag 5</td>
+                  <td>S567890</td>
+                  <td>Ausgeliehen</td>
+                  <td>Lager 2</td>
+                </tr>
+                <tr>
+                  <td>Eintrag 6</td>
+                  <td>S123789</td>
+                  <td>Reparatur</td>
+                  <td>Lager 3</td>
+                </tr>
+                <tr>
+                  <td>Eintrag 7</td>
+                  <td>S456012</td>
+                  <td>Verfügbar</td>
+                  <td>Lager 1</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination mt-4 justify-content-center" >
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#"  style="color: #99CC33;">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">...</a></li>
+          <li class="page-item"><a class="page-link" href="#">9</a></li>
+          <li class="page-item"><a class="page-link" href="#">10</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+  </main>
+</body>
+
+</html>

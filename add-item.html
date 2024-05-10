@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<!---HEAD-->
+
+<head>
+    <meta charset="utf-8">
+    <title>add-item</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script defer src="src/JS/bootstrap.js"></script>
+
+    <script>
+        /** Handler that does this and that... */
+        function myfunction() {
+            alert("Änderungen Gespeichert")
+        }
+    </script>
+</head>
+
+<!---BODY-->
+
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+
+
+            <a class="navbar-brand" href="#" id="picture"><img src="src/img/Logo_makeIT.svg"></a>
+            <div class="position-absolute top-0 end-0 icon_div">
+                <button class="btn btn-secondary dropdown nav-link" type="button" data-bs-toggle="dropdown"
+                    data-bs-display="static" aria-expanded="false">
+                    <img class="profile_active" src="src/img/person-circle.svg" alt="A Profile Logo">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" id="dri" href="#">Profil</a></li>
+                    <li><a class="dropdown-item" id="dri" href="#">Einstellungen</a></li>
+                    <li><a class="dropdown-item" id="dri" href="index.html">Abmelden</a></li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inventar.html">Inventar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Impressum</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid mt-5">
+        <div class="svg-container" style="position: absolute;">
+          <a href="#" onclick="window.history.back(); return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height=""
+              class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+            </svg>
+          </a>
+        </div>
+        <h1 class="pb-5" class="pb-5"> Item hinzufügen:</h1>
+    </div>
+
+    <!---EINGABEFLEDER--->
+    <section class="container py-5">
+        <form>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                <div class="col">
+                    <label for="name" class="form-label">Name:</label>
+                    <input class="form-control" id="name">
+                </div>
+                <div class="col">
+                    <label for="anschaffungsdatum" class="form-label">Anschaffungsdatum:</label>
+                    <input class="form-control" id="anschaffungsdatum">
+                </div>
+                <div class="col">
+                    <label for="marke" class="form-label">Marke:</label>
+                    <input class="form-control" id="marke">
+                </div>
+                <div class="col">
+                    <label for="kategorie" class="form-label">Kategorie:</label>
+                    <input class="form-control" id="kategorie">
+                </div>
+                <div class="col">
+                    <label for="Modell" class="form-label">Modell:</label>
+                    <input class="form-control" id="modell">
+                </div>
+                <div class="col">
+                    <label for="Status" class="form-label">Status:</label>
+                    <!---DROPDOWN--->
+                    <div class="dropdown">
+                        <button id="mybutton"
+                            class="d-flex justify-content-end btn btn-outline-secondary dropdown"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="Arrow-Down" src="src/img/chevron-down.svg">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a id="dri" class="dropdown-item" href="#">Verbaut</a></li>
+                            <li><a id="dri" class="dropdown-item" href="#">Verfügbar</a></li>
+                            <li><a id="dri" class="dropdown-item" href="#">Verliehen</a></li>
+                            <li><a id="dri" class="dropdown-item" href="#">Verloren</a></li>
+                            <li><a id="dri" class="dropdown-item" href="#">Kaputt</a></li>
+                            <li><a id="dri" class="dropdown-item" href="#">In Wartung</a></li>
+                        </ul>
+                    </div>
+                    <!---DROPDOWN END--->
+                </div>
+                <div class="col ">
+                    <label for="exampleInputEmail1" class="form-label">Inventarnummer:</label>
+                    <input class="form-control" id="Inventarnummer">
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1" class="form-label">Kosten (in Euro):</label>
+                    <input type="search" class="form-control" id="Kosten">
+                </div>
+            </div>
+            <!---EINGABEFELDER END--->
+
+            <!---IMAGE UPLOAD BOX--->
+            <div class="row row-cols-md-2 row-cols-1 mt-5">
+                <div class="col">
+                    <div class="border border-1 border-secondary p-3">   
+                        <div class="svg-bild">
+                            <a><img class="svg-image" src="src/img/card-image.svg"></a>
+                        </div>
+                    </div>
+
+                    <!---IMAGE UPLOAD-BOX END--->
+
+                    <!---BUTTONS--->
+                    <div class="button-container pt-1">
+                        <button type="button" class="btn btn-outline-success"
+                            style="margin-right: 5px; margin-top: 5px;">Foto löschen</button>
+                        <button type="button" class="btn btn-outline-success"
+                            style="margin-right: 5px; margin-top: 5px;" onclick="myfunction2()">Foto hochladen</button>
+                    </div>
+                </div>
+                <!---BUTTONS END-->
+                <div class="col" id="style_me">
+                    <div id="Text-Box" class="border border-1 border-primary  p-3 container-fluid">
+                        Es wurde ein eindeutiges Label mit einem QR-Code generiert.
+                        Dieser Code enthält alle relevanten Informationen zu diesem Item.
+                        Verwende den QR-Code, um schnell und einfach auf die Details deines Items zuzugreifen.
+                        Scanne einfach den Code mit einem QR-Code-Scanner, um direkt zu den relevanten Informationen zu
+                        gelangen.
+                    </div>
+
+                    <!---WICHTIGSTE BUTTONS--->
+
+                </div>
+
+            </div>
+            
+            <!-- DETAILS END -->
+
+            <!-- BUTTONS -->
+            <div class="mt-3 gy-2 d-flex justify-content-end">
+                <button type="button" class="btn btn-secondary-primary">Abbrechen</button>
+                <button type="button" onclick="myfunction()" class="btn btn-primary">Hinzufügen</button>
+            </div>
+            <!-- BUTTONS END -->
+        </form>
+    </section>
+
+</body>
+<!---BODY END--->
+
+</html>
